@@ -1,0 +1,52 @@
+% BangorEE - (an unofficial) Electronic Engineering Dissertation LaTeX Class.
+% Usage info and bug reports at https://github.com/owenjones/bangoree
+
+\documentclass[msc]{bangoree}
+
+\usepackage{lipsum} % To create some filler content
+\usepackage[style=authoryear-ibid]{biblatex}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{appendix}
+
+\title{Leksis: Prawf Geirfa Ymaddasol Am Ieithoedd Isadnodd}
+\author{Alan Kersaudy}
+\course{Technoleg Iaith}
+\date{Medi, 2025}
+\supervisor{Dr.\ G. Bovolenta}
+
+\addbibresource{references.bib}
+
+\renewcommand{\contentsname}{Cynnwys}
+\renewcommand{\listfigurename}{Rhestr o Ffigurau}
+\renewcommand{\listtablename}{Rhestr o Dablau}
+\renewcommand{\nomname}{Rhestr o Dalfyriadau}
+\renewcommand{\appendixname}{Atodiad}
+\makeatletter
+\renewcommand{\@chapapp}{Pennod}
+\makeatother
+
+\begin{document}
+    \maketitle
+    \statements
+    \abstract{abc}
+    \acknowledgements{\lipsum[1]}
+    \tables
+    
+    \content
+    \include{pennodau/1_rhagymadrodd}
+
+    \include{pennodau/2_adolygiad_llenyddiaeth}
+
+    \include{pennodau/3_methodoleg}
+
+    \include{pennodau/4_dadansoddiad_canlyniadau}
+
+    \include{pennodau/5_casgliad}
+
+    \begin{appendices}
+      \include{pennodau/atodiad}
+    \end{appendices}
+
+    \printbibliography[title={Llyfryddiaeth}, heading=bibintoc]
+\end{document}

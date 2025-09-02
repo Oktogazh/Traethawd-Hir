@@ -143,7 +143,7 @@
     sorting=none,
   ]{biblatex}
 
-  \DefineBibliographyStrings{english} {
+  \DefineBibliographyStrings{english}{
     backrefpage  = {p.},
     backrefpages = {p.},
     bibliography = {References}
@@ -168,7 +168,7 @@
 \pagestyle{fancy}
 
 % Footer for non-content pages (abstract etc)
-\fancypagestyle{plain} {
+\fancypagestyle{plain}{
   \fancyfoot{}
   \fancyhead{}
   \renewcommand{\headrulewidth}{0pt}
@@ -190,7 +190,7 @@
 }
 
 % Footer for content pages
-\fancypagestyle{maincontentstyle} {
+\fancypagestyle{maincontentstyle}{
   \fancyfoot{}
   \fancyhead{}
   \renewcommand{\headrulewidth}{0pt}
@@ -3624,9 +3624,7 @@
     \newcommand{\sig}{\vspace{2cm}}
   }{
     \newcommand{\sig}{\includegraphics[height=2cm]{#1}}
-  }
-
-  {
+  }{
     \setstretch{1.2}
     \null\vfill
 
@@ -3694,7 +3692,7 @@
 \newcommand{\tables}{
   \cleardoublepage
   \preamblenumbering
-  \setcounter{tocdepth}{1}
+  \setcounter{tocdepth}{2}
   {
     \setstretch{1.4}
     \pdfbookmark[0]{Contents}{contents}
@@ -3712,7 +3710,6 @@
   }
   \abbreviations
 }
-
 % Switch context to main content body
 \newcommand{\content}{
   \setstretch{1.5}

@@ -1,0 +1,15 @@
+{
+  "latex-workshop.linting.chktex.enabled": false,
+  "latex-workshop.linting.lacheck.enabled": false,
+  "latex-workshop.latex.lint.onBuild": false,
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "latex": false,
+    "bibtex": false,
+    "tex": false
+  }
+}

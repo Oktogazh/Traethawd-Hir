@@ -3670,11 +3670,11 @@
 }{}
 
 % Acknowledgements
-\DeclareDocumentCommand{\acknowledgements}{ m }{
+\DeclareDocumentCommand{\cydnabyddion}{ m }{
   \cleardoublepage
   \preamblenumbering
-  \pdfbookmark[0]{Acknowledgements}{Acknowledgements}
-  \chapter*{Acknowledgements}\label{chp:acknowledgement}
+  \pdfbookmark[0]{Cydnabyddion}{Cydnabyddion}
+  \chapter*{Cydnabyddion}\label{chp:cydnabyddion}
   \setstretch{1.5}
   #1
 }
@@ -3683,7 +3683,8 @@
 \newcommand{\abbreviations}{
   \cleardoublepage
   \preamblenumbering
-  \pdfbookmark[0]{Abbreviations}{Abbreviations}
+  \pdfbookmark[0]{Dalfyriadau}{Dalfyriadau}
+  \renewcommand{\nomname}{Rhestr o Dalfyriadau}
   \printnomenclature\label{chp:abbreviations}
 }
 
@@ -3695,16 +3696,17 @@
   \setcounter{tocdepth}{2}
   {
     \setstretch{1.4}
-    \pdfbookmark[0]{Contents}{contents}
+    \pdfbookmark[0]{Cynnwysion}{cynhwysion}
+    \renewcommand{\contentsname}{Cynnwysion}
     \tableofcontents
     \iftotalfigures
       \cleardoublepage
-      \pdfbookmark[0]{List of Figures}{lof}
+      \renewcommand{\listfigurename}{Rhestr o Ffigurau}
       \listoffigures
     \fi
     \iftotaltables
-      \cleardoublepage
-      \pdfbookmark[0]{List of Tables}{lot}
+      \cleardoublepageF
+      \renewcommand{\listtablename}{Rhestr o Dablau}
       \listoftables
     \fi
   }

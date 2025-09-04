@@ -3551,7 +3551,7 @@
 % Title Page
 \hypersetup{pageanchor=false}
 \begin{titlepage}
-  \pdfbookmark[0]{Title Page}{Title Page}
+  \pdfbookmark[0]{Tudalen Deitl}{Tudalen Deitl}
   \centering
 
   \vspace*{0.5cm}
@@ -3567,7 +3567,7 @@
 
   {
     \setstretch{1.2}
-    Ysgol y Celfyddydau, Diwylliant ac Iaith \\
+    Ysgol Iaith Diwylliant a Chelfyddydau \\
     Coleg y Celfyddydau, y Dyniaethau a Busnes\par
   }
 

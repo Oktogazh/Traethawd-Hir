@@ -3617,8 +3617,8 @@
 \DeclareDocumentCommand{\statements}{ O{} }{
   \cleardoublepage
   \preamblenumbering
-  \pdfbookmark[0]{Statement of Originality \& Availability}{Statements}
-  \label{chp:statements}
+  \pdfbookmark[0]{Datganiad o wreiddioldeb \& Argaeledd}{Datganiadau}
+  \label{chp:datganiadau}
 
   \ifthenelse{\equal{#1}{}}{
     \newcommand{\sig}{\vspace{2cm}}
@@ -3629,13 +3629,13 @@
     \null\vfill
 
     \begin{framed}
-      \noindent\textbf{Statement of Originality}\par
+      \noindent\textbf{Datganiad o Wreiddioldeb}\par
       \vspace{0.25cm}
-      The work presented in this report is entirely from the studies of the individual student,
-      except where otherwise stated. Where derivations are presented and the origin of the work
-      is either wholly or in part from other sources, then full reference is given to the original
-      author. This work has not been presented previously for any degree, nor is it at present
-      under consideration by any other degree awarding body.\par
+      Mae'r gwaith a gyflwynwyd yn yr adroddiad hwn yn gyfan gwbl o astudiaethau'r myfyriwr unigol,
+      ac eithr na hynny lle nodir. Lle cyflwynir dadleuon a'r tarddiad o'r gwaith yn gyfan neu'n rhannol
+      o ffynonellau eraill, rhoddir cyfeiriad llawn i'r awdur gwreiddiol. Ni chyflwynwyd y gwaith hwn
+      o'r blaen ar gyfer unrhyw radd, ac nid yw ar hyn o bryd o dan ystyriaeth gan unrhyw gorff
+      sy'n dyfarnu graddiau arall.\par
       \vspace{0.25cm}
       \noindent Student:\par
       \sig
@@ -3645,11 +3645,11 @@
     \vfill
 
     \begin{framed}
-      \noindent\textbf{Statement of Availability}\par
+      \noindent\textbf{Datganiad o Argaeledd}\par
       \vspace{0.25cm}
-      I hereby acknowledge the availability of any part of this report for viewing, photocopying
-      or incorporation into future studies, providing that full reference is given to the origins
-      of any information contained herein.\par
+      Adwaen yma bod unrhyw ran o'r adroddiad hwn ar gael i'w weld, ei ffotogopio
+      neu ei chynnwys mewn astudiaethau yn y dyfodol, gan roi cyferiad llawn i'r tarddiad
+      o unrhyw wybodaeth sydd wedi'i gynnwys yma.\par
       \vspace{0.25cm}
       \noindent Student:\par
       \sig
@@ -3664,8 +3664,8 @@
 \renewenvironment{abstract}{
   \cleardoublepage
   \preamblenumbering
-  \pdfbookmark[0]{Abstract}{Abstract}
-  \chapter*{\abstractname}\label{chp:abstract}
+  \pdfbookmark[0]{Crynodeb}{Crynodeb}
+  \chapter*{\abstractname}\label{chp:crynodeb}
   \setstretch{1.5}
 }{}
 

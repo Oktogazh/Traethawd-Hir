@@ -22,10 +22,13 @@
 \makeatother
 
 \begin{document}
+    \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+    \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+    \renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
     \maketitle
     \statements
-    \abstract{abc}
-    \cydnabyddion{\lipsum[1]}
+    \include{penodau/0_crynodeb}
+    \cydnabyddion{Ni ddylid priodoli unrhyw ansawdd a geir yn y draethawd hwn i'w awdur, nad yw'n dwyn ond y cyfrifoldeb bychan o roi ynghyd syniadau, mewnwelediadau, a myfyrdodau eraill. Hyd yn oed cafodd yr ymdrech fechan hon ei chynnal yn uniongyrchol neu'n anuniongyrchol gan bobl a sefydliadau a wnaeth fy arhosiad ym Mangor mor ddymunol, buddiol a chynhyrchiol ag y gallai fod. Yn arbennig, rwy'n ddyledus yn uniongyrchol i Giulia Bovolenta, a'm cyfeiriodd gyntaf tuag at brofi geirfa, ac y bu ei mewnwelediadau niferus yn arwain pob cam drwy'r gwaith hwn. Maria Kolesnichenko yw goleudy'r synnwyr cyffredin caredig a'm cadwodd rhag boddi mewn môr o syniadau gwael drwy'r flwyddyn gyfan. Melanie Jouitteau, a blannodd gyntaf yn fy meddwl y syniad o wneud y gradd Meistr hon ym Mangor. Dysgu Philip Davies yn y cwrs TSI a'm helpodd i wella fy sgiliau Cymraeg, ynghyd â chyd-fyfyrwyr Cymraeg eu hiaith y gallaf ond bod yn ddiolchgar i'w galw'n ffrindiau: Leena Farhat, Tom Williams, Stephen Russel ac Owen Williams. Mae Preben Vanberg ymhlith llawer o bethau yn berson cyfrifol am y syniad o osod anhawster yr eitemau ar yr un raddfa logistaidd â'r rhai sy'n cymryd y prawf. Tîm cyfan Canolfan Bedwyr, yn eu plith Tegau, Cat, Alun, Steffano a llawer o rai eraill. Ond yn arbennig cyfarwyddwr ei Uned Dechnoleg Gruffydd Prys a'i deulu, na ellir gwneud cyfiawnder â geiriau i'w hymdrech i'm croesawu a chefnogi fy arhosiad ym Mangor. Dau athro arall, Dewi Bryn Jones a Bill Teahan, a'm helpodd, mewn ffordd wahanol iawn ond gyflenol, i feistroli llawer o'r sgiliau a wnaeth y gwaith hwn yn bosibl. Yn olaf, mae'r gefnogaeth ariannol a gefais gan Cymen yn gyfle a'm hysgogodd i gynhyrchu'r teclyn gorau y gallwn ei gynhyrchu'n faterol ar gyfer y Gymraeg. Yn y pen draw, rwy'n cyflwyno'r prawf hwn a'r asiant tiwtiora sy'n gysylltiedig ag ef i Cymen a'i chyfarwyddwyr Manon Cadwaladr ac Aled Jones yn ogystal â Myfyr Prys, am eu rôl yn galluogi ysgoloriaeth Cymen. Boed yn arwydd bach o ddiolchgarwch am yr ymddiriedaeth a'r rhyddid y maent wedi ei roi imi. Rwy'n fendigedig ac yn ddiolchgar am fod wedi croesi llwybr cymaint o bobl ddeallus a da ac mae'r gwaith hwn yn bennaf ffrwyth eu caredigrwydd cyfunol.}
     \tables
 
     \content
@@ -35,7 +38,9 @@
 
     \include{penodau/3_methodoleg}
 
-    \include{penodau/4_dadansoddiad_canlyniadau}
+    \include{penodau/4_canlyniadau}
+
+    \include{penodau/5_Trafodiaeth}
 
     \begin{appendices}
       \include{penodau/atodiad}

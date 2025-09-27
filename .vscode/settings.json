@@ -8,8 +8,9 @@
     "plaintext": true,
     "markdown": false,
     "scminput": false,
-    "latex": false,
+    "latex": true,
     "bibtex": false,
+    "python": true,
     "tex": false
   }
 }

@@ -3705,7 +3705,7 @@
       \listoffigures
     \fi
     \iftotaltables
-      \cleardoublepageF
+      \cleardoublepage
       \renewcommand{\listtablename}{Rhestr o Dablau}
       \listoftables
     \fi

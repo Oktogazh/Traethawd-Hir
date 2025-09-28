@@ -3664,11 +3664,10 @@
 \renewenvironment{abstract}{
   \cleardoublepage
   \preamblenumbering
-  \pdfbookmark[0]{Crynodeb}{Crynodeb}
+  \pdfbookmark[0]{Abstract}{Abstract}
   \chapter*{\abstractname}\label{chp:crynodeb}
   \setstretch{1.5}
 }{}
-
 % Acknowledgements
 \DeclareDocumentCommand{\cydnabyddion}{ m }{
   \cleardoublepage

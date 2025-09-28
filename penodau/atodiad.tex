@@ -1,7 +1,7 @@
 ﻿\chapter{Promt Dadansoddi}
 \label{pnd:Promt Dadansoddi}
 \section{Patrymlun}
-The following is the text that is used to produce an analysis with an LLM\@. The strings \$\{code\} is replaced with the IETF language code of the test and the user's final test score. Additionally to that, two lists of words are added at the end of the prompt, the recognised ones and the unrecognised words, with the format \textit{- word (score)}.
+Mae'r bennod hon yn cyflwyno'r patrymlun a ddefnyddir i gynhyrchu gwersi personol gan fodel iaith mawr (LLM) fel ChatGPT\@. Mae'r patrymlun yn seiliedig ar y canlyniadau prawf a gyflwynir gan ddefnyddwyr ar y llwyfan prawf geirfa. Mae'r canlyniadau'n cynnwys sgôr derfynol y prawf a rhestr o eiriau a adnabuwyd a rhai na adnabuwyd, gyda'u sgoriau perthnasol gan y fformat \textit{- gair (sgôr)}.
 
 \begin{quote}
 You are an expert language tutor specializing in teaching through personalized, context-aware instruction. Your role is to create engaging learning content based on vocabulary assessment results for the language identified by the \$\{code\} IETF language tag.
@@ -20,19 +20,19 @@ Engage students actively by soliciting feedback after each micro-lesson. Offer c
 Begin your lesson immediately upon receiving the test results, greeting your student warmly and launching directly into personalized instruction based on their specific vocabulary gaps.
 \end{quote}
 
-\section{Example}
+\section{Enghraifft}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/lesson-1.png}
-    \caption{Beginning of a personalized lesson 1/2}
+    \caption{Dechrau gwers bersonol 1/2}
     \label{fig:lesson1}
 \end{figure}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/lesson-2.png}
-    \caption{Beginning of a personalized lesson 2/2}
+    \caption{Dechrau gwers bersonol 2/2}
     \label{fig:lesson2}
     \medskip
     \small
-    Indeed, ChatGPT can make mistakes, the word \textit{digon} is not mentioned anywhere, yet the second section implies it is present somewhere or that it is related in some way to the word \textit{treulio}. And \textit{gair} is masculine, so it should say \textit{tri gair} and not \textit{tair gair}. Interestingly however, the LLM seems to work out that the the lowest rated words proper, within the 800-850 rating range, may have been missed by mistake and start its lesson by the fourth to the sixth lowest rated unrecognised words.
+    Yn wir! Mae ChatGPT yn gallu gwneud camgymeriadau, nid yw'r gair \textit{digon} yn cael ei grybwyll unrhywle (er ei fod yn y rhestr geiriau a gydnabyddir), eto mae'r ail adran yn awgrymu ei fod yn bresennol rywle neu ei fod yn gysylltiedig mewn rhyw ffordd â'r gair \textit{treulio}. Ac mae \textit{gair} yn wrywaidd, felly dylai ddweud \textit{tri gair} ac nid \textit{tair gair}. Yn ddiddorol fodd bynnag, mae'r LLM yn ymddangos i weithio allan mai efallai bod y geiriau anadnabyddedig isaf o ran eu sgôr, o fewn yr ystod sgôr 800-850, wedi'u colli drwy gamgymeriad ac yn dechrau ei wers o'r pedwerydd i'r chweched gair yn y rhestr geiriau anadnabyddedig.
 \end{figure}
